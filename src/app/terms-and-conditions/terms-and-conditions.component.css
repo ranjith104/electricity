@@ -1,0 +1,15 @@
+.terms-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .terms-container h2 {
+    font-size: 24px;
+  }
+  
+  .terms-container p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  

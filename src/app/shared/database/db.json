@@ -1,0 +1,142 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "uid": "admin@gmail.com",
+      "upass": "admin@123",
+      "role": "Admin"
+    },
+    {
+      "id": "2",
+      "uid": "hero@gmail.com",
+      "upass": "hero@123",
+      "role": "Trainer"
+    },
+    {
+      "id": "3",
+      "uid": "hello@gmail.com",
+      "upass": "hello@123",
+      "role": "Councellor"
+    },
+    {
+      "id": "4",
+      "uid": "tamizh@gmail.com",
+      "upass": "paulson@123",
+      "role": "Manager"
+    },
+    {
+      "id": "5",
+      "uid": "king@gmail.com",
+      "upass": "king@123",
+      "role": "Developer"
+    },
+    {
+      "id": "121",
+      "uid": " Supriya@gmail.com",
+      "upass": " supriya@22",
+      "role": "Founder"
+    }
+  ],
+  "bills": [
+    {
+      "id": "1",
+      "consumerId": 123456,
+      "amount": 100.5,
+      "dueDate": "2024-04-15",
+      "status": "Paid",
+      "Is enable": false
+    },
+    {
+      "id": "2",
+      "consumerId": 123456,
+      "amount": 75.2,
+      "dueDate": "2024-05-10",
+      "status": "Pending",
+      "Is enable": false
+    },
+    {
+      "id": "3",
+      "consumerId": 789012,
+      "amount": 150.75,
+      "dueDate": "2024-04-20",
+      "status": "Paid",
+      "Is enable": false
+    }
+  ],
+  "employee": [
+    {
+      "id": "4177",
+      "name": "mary",
+      "address": "6th&7th Floor,Olympia National Towers,Block 3,A3 &A4 North Phase",
+      "amount": "200",
+      "duedate": ""
+    },
+    {
+      "id": "b6f2",
+      "name": "abishek",
+      "address": "6th&7th Floor,Olympia National Towers,Block 3,A3 &A4 North Phase",
+      "amount": "300",
+      "duedate": ""
+    },
+    {
+      "id": "22ec",
+      "name": "smithi sundar",
+      "address": "6th&7th Floor,Olympia National Towers,Block 3,A3 &A4 North Phase",
+      "amount": "234",
+      "duedate": ""
+    },
+    {
+      "id": "fb3c",
+      "name": "ranjit",
+      "address": "6th&7th Floor,Olympia National Towers,Block 3,A3 &A4 North Phase",
+      "amount": "",
+      "duedate": ""
+    }
+  ],
+  "consumers": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "address": "123 Main Street",
+      "amount": 100,
+      "dueDate": "2024-04-30"
+    },
+    {
+      "id": "2",
+      "name": "Alice Smith",
+      "address": "456 Elm Street",
+      "amount": 150,
+      "dueDate": "2024-05-15"
+    }
+  ],
+  "customer": [
+    {
+      "consumerNo": 101,
+      "name": "ranjith",
+      "totalAmountPaid": 200,
+      "dueDate": "2024-04-30",
+      "needsToPay": false
+    },
+    {
+      "consumerNo": 102,
+      "name": "mary",
+      "totalAmountPaid": 0,
+      "dueDate": "2024-04-30",
+      "needsToPay": true
+    },
+    {
+      "consumerNo": 103,
+      "name": "smithi",
+      "totalAmountPaid": 0,
+      "dueDate": "2024-04-30",
+      "needsToPay": true
+    },
+    {
+      "consumerNo": 104,
+      "name": "akash",
+      "totalAmountPaid": 200,
+      "dueDate": "2024-04-30",
+      "needsToPay": false
+    }
+  ]
+}

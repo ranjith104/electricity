@@ -1,0 +1,25 @@
+<!-- <video id="background-video" loop muted autoplay>
+    <source src="" type="">
+    
+    Your browser does not support the video tag.
+  </video> -->
+  
+  <div class="content">
+    <form [formGroup]="userData" (ngSubmit)="checkData()">
+      <div>
+        <label for="userId">User ID</label>
+        <input type="text" id="userId" formControlName="userId">
+      </div>
+      <div>
+        <label for="userpass">Password</label>
+        <input type="password" id="userpass" formControlName="userpass">
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  
+    <div class="links">
+      <p><a href="forgot">Forgot Password?</a></p>
+      <p><a href="createuser">Create New User ID</a></p>
+    </div>
+  </div>
+  

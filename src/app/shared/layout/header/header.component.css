@@ -1,0 +1,50 @@
+/* Basic styling for the navbar */
+nav {
+    background-color: #24b6ef;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 0px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    margin-left: -17px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: #0c0b0b;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #d8f138;
+}
+
+/* Styling for the logout button */
+#logout {
+    float: right;
+}
+
+#logout a {
+    color: red; /* Change this to your desired logout button color */
+    padding: 14px 16px; /* Add padding to match other navbar links */
+    text-decoration: none; /* Remove underline */
+}
+
+#logout a:hover {
+    color: #ff0000; /* Change hover color */
+    background-color: transparent; /* Remove background color on hover */
+}

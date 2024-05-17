@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="referrer" content="origin-when-cross-origin">
+    <script>//<![CDATA[
+      var s = false;
+      function l() {
+        setTimeout(f, 10000);
+        if (document.referrer) {
+          try {
+            var pm = /(^|&|\?)px=([^&]*)(&|$)/i;
+            var px = window.location.href.match(pm);
+            var rs = document.referrer;
+            if (px != null) {
+              if (rs.match(pm))
+                rs = rs.replace(pm, "$1px=" + px[2] + "$3");
+              else if (rs.indexOf("?") != -1)
+                rs = rs + "&px=" + px[2];
+              else
+                rs = rs + "?px=" + px[2];
+            }
+            history.replaceState({}, "Bing", rs);
+            window.addEventListener("pageshow", function(e) { if (e.persisted || (typeof window.performance != "undefined" && window.performance.navigation.type === 2)) window.location.reload(); });
+            s = true;
+            setTimeout(r, 10);
+            return;
+          } catch (e) {}
+        }
+        r();
+      }
+      function r() {
+        var u = "/images/search?q=sign%20in%20page%20background%20images&FORM=IQFRBA&id=B1EF5172EA33319650529EB0FC795DEB8E6562DA";
+        if (s)
+          window.location.href = u;
+        else
+          window.location.replace(u);
+      }
+      function f() {
+        document.getElementById("fb").style.display = "block";
+      }
+      //]]>
+    </script>
+  </head>
+  <body onload="l()">
+    <div id="fb" style="display: none">
+      Please <a href="https://www.bing.com/ck/a?!&&p=4183ea3c69599d8cJmltdHM9MTcxMDAyODgwMCZpZ3VpZD0wNDk3MzQzYS1jY2ZmLTYyNzYtMTY3NC0yMDAyY2RjOTYzNTMmaW5zaWQ9NTY0Mw&ptn=3&ver=2&hsh=3&fclid=0497343a-ccff-6276-1674-2002cdc96353&u=a1L2ltYWdlcy9zZWFyY2g_cT1zaWduJTIwaW4lMjBwYWdlJTIwYmFja2dyb3VuZCUyMGltYWdlcyZGT1JNPUlRRlJCQSZpZD1CMUVGNTE3MkVBMzMzMTk2NTA1MjlFQjBGQzc5NURFQjhFNjU2MkRB&ntb=F">click here</a> if the page does not redirect automatically ...
+    </div>
+  </body>
+</html>

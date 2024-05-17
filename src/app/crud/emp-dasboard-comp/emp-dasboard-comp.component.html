@@ -1,0 +1,37 @@
+<app-header></app-header>
+<div class="body">
+<h1 appChangecolor>Add consumer</h1>
+<button type="button" class="btn btn-outline-success btn-sm" routerLink="/empadd">Add
+    <i class="fa fa-plus" aria-hidden="true"></i>
+</button>
+ 
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>consumer no </th> <th>consumer Name </th> <th>address</th><th>total amount </th><th>due date</th>
+        </tr>
+ 
+    </thead>
+    <tbody>
+        <tr *ngFor="let emp of empData">
+            <td>{{emp.id}}</td>
+            <td> {{emp.name}}</td>
+            <td> {{emp.address}}</td>
+            <td> {{emp.amount}}</td>
+            <td> {{emp.duedate}}</td>
+         <td>
+            <button type="button" [routerLink]="['/edit',emp.id]"class="btn btn-outline-success btn-sm">
+                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+            </button>
+            <button type="button" class="btn btn-outline-danger btn-sm"(click)="deleteData(emp.id)">
+                <i class="fa fa-trash" aria-hidden="true"></i>
+            </button>
+          
+         </td>
+ 
+        </tr>
+    </tbody>
+</table>
+
+<h3 appChangeColor>{{errorMessage}}</h3>
+</div>

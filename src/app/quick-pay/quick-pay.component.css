@@ -1,0 +1,51 @@
+/* quick-pay.component.css */
+
+/* Style for the form container */
+.quick-pay-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Style for form labels */
+  .quick-pay-container label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  /* Style for form input fields */
+  .quick-pay-container input[type="number"],
+  .quick-pay-container input[type="text"],
+  .quick-pay-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* Style for the submit button */
+  .quick-pay-container button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  /* Style for the submit button on hover */
+  .quick-pay-container button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  .body
+  {
+    position: relative;
+    bottom: -130px;
+}

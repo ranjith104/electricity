@@ -1,0 +1,30 @@
+
+<h2>Edit consumer Form</h2>
+<div class="row">
+    <div class="col-3"></div>
+    <div class="col-6">
+        <form #refEmp="ngForm" (ngSubmit)="addData(refEmp.value)">
+            <div>
+            <label for="name" class="form-label">Enter consumer Name:</label>
+            <input type="text" name="name" id="name" class="form-control" [ngModel]="empData?.name">
+        </div>
+        <div>
+            <label for="address" class="form-label">Enter address:</label>
+            <input type="text" name="post" id="post" class="form-control" [ngModel]="empData?.address">
+        </div>
+        <div>
+            <label for="amount" class="form-label">Enter total amount:</label>
+            <input type="text" name="salary" id="salary" class="form-control" [ngModel]="empData?.amount">
+        </div>
+        <div>
+            <label for="duedate" class="form-label">due date:</label>
+            <input type="text" name="address"  id="address" class="form-control" [ngModel]="empData?.duedate">
+   
+        </div>
+   
+   
+        <button type="submit" class="btn btn-primary mt-3"><i class="fa fa-upload" aria-hidden="true"></i>&nbsp;submit</button>&nbsp;&nbsp;
+        <button type="reset" class="btn btn-primary mt-3"><i class="fa fa-refresh" aria-hidden="true"></i>&nbsp;Reset</button>
+   
+    </form>
+    </div>
